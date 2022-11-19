@@ -62,10 +62,5 @@ setup(
 		'tqdm',
 	],
 	
-	# No more conveinent .exe entry point thanks to some idiot who 
-	# used the code without modification in a state-backed trojan.
-	# Thank you for runing it for everyone.
-	# 
-	# 
-	entry_points=ep if platform.system().lower() != 'windows' else {}
+	entry_points=ep 
 )
